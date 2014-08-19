@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Linked Lists</title>
+    <script src="linked_lists.js"></script>
+    <script>
+
+        var ll = new LinkedList();
+        console.log(ll.head);
+
+
+        for(var i=1; i<=10; i++){
+            ll.insert(i);
+        }
+
+
+        ll.insert(8,2);
+        ll.insert(7,2,1);
+
+        ll.display();
+
+        ll.insert(11,5,0);
+        ll.insert(12,5,1);
+        ll.display();
+
+        ll.remove(5);
+        ll.remove(11);
+        ll.remove(1);
+        ll.remove(8);
+        console.log("Deleting...");
+        ll.display();
+
+        console.log("Reverse:");
+        var revList = ll.reverse();
+        revList.display();
+
+      /*  console.log("-----Checking for insert after");
+        var cities = new LinkedList();
+        cities.insert("Conway", "HEAD_NODE");
+        cities.display();
+        cities.insert("Russellville", "Conway");
+        cities.display();
+        cities.insert("Alma", "Russellville");
+        cities.display();
+
+
+        console.log("-----Checking for insert before");
+        var cities_rev = new LinkedList();
+        cities_rev.insert("Conway"); //Insert an element into the list first.
+        cities.display();
+        cities_rev.insert("Russellville", "Conway",1);
+        cities.display();
+        cities_rev.insert("Alma", "Russellville",1);
+        cities_rev.display()*/
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
